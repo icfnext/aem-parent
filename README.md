@@ -1,4 +1,4 @@
-# CITYTECH, Inc. AEM Parent POM
+# AEM Parent POM
 
 [CITYTECH, Inc.](http://www.citytechinc.com)
 
