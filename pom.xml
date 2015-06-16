@@ -8,7 +8,8 @@
     <version>6.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>AEM Parent POM</name>
-    <description>Maven parent POM for AEM (Adobe CQ) projects that defines a dependency management section containing
+    <description>
+        Maven parent POM for AEM (Adobe CQ) projects that defines a dependency management section containing
         all of the available dependencies that are provided by the OSGi container.
     </description>
 
@@ -156,7 +157,7 @@
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.installer.core</artifactId>
-                <version>3.6.2</version>
+                <version>3.6.4</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.sling</groupId>
@@ -171,7 +172,7 @@
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.installer.provider.file</artifactId>
-                <version>1.0.4</version>
+                <version>1.1.0</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.sling</groupId>
@@ -349,6 +350,11 @@
                 <version>2.5-0001</version>
             </dependency>
             <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>2.5</version>
+            </dependency>
+            <dependency>
                 <groupId>commons-collections</groupId>
                 <artifactId>commons-collections</artifactId>
                 <version>3.2.1</version>
@@ -469,14 +475,14 @@
                 <version>5.0.30</version>
             </dependency>
             <dependency>
-                <groupId>com.adobe.granite</groupId>
-                <artifactId>com.adobe.granite.repository</artifactId>
-                <version>1.1.50</version>
+                <groupId>com.adobe.granite.osgi.wrapper</groupId>
+                <artifactId>com.adobe.granite.osgi.wrapper.guava</artifactId>
+                <version>15.0.0-0002</version>
             </dependency>
             <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>15.0</version>
+                <groupId>com.adobe.granite</groupId>
+                <artifactId>com.adobe.granite.repository</artifactId>
+                <version>1.1.62</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
@@ -486,37 +492,37 @@
             <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>oak-auth-external</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.2</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>oak-auth-ldap</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.2</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>oak-blob</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.2</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>oak-commons</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.2</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>oak-core</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.2</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>oak-lucene</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.2</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>oak-mk-api</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.2</version>
             </dependency>
             <dependency>
                 <groupId>com.spatial4j</groupId>
@@ -529,29 +535,14 @@
                 <version>1.2</version>
             </dependency>
             <dependency>
-                <groupId>commons-lang</groupId>
-                <artifactId>commons-lang</artifactId>
-                <version>2.6</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpclient</artifactId>
-                <version>4.3.3</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpmime</artifactId>
-                <version>4.3.3</version>
-            </dependency>
-            <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>oak-solr-core</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.2</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>oak-solr-osgi</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.2</version>
             </dependency>
             <dependency>
                 <groupId>org.noggit</groupId>
@@ -586,7 +577,7 @@
             <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>oak-tarmk-standby</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.2-R1677973</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
@@ -630,9 +621,7 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.sling</groupId>
-                <artifactId>
-                    org.apache.sling.extensions.webconsolesecurityprovider
-                </artifactId>
+                <artifactId>org.apache.sling.extensions.webconsolesecurityprovider</artifactId>
                 <version>1.1.4</version>
             </dependency>
             <dependency>
@@ -703,7 +692,7 @@
             <dependency>
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
-                <version>1.10.0</version>
+                <version>1.10</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
@@ -718,6 +707,16 @@
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient-osgi</artifactId>
+                <version>4.3.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>4.3.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpmime</artifactId>
                 <version>4.3.4</version>
             </dependency>
             <dependency>
@@ -791,14 +790,14 @@
                 <version>2.1.6</version>
             </dependency>
             <dependency>
+                <groupId>com.day.cq</groupId>
+                <artifactId>cq-compat-codeupgrade</artifactId>
+                <version>1.5.6</version>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>jackrabbit-webdav</artifactId>
                 <version>2.10.0</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.sling</groupId>
-                <artifactId>org.apache.sling.jcr.davex</artifactId>
-                <version>1.2.2</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
@@ -838,7 +837,7 @@
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>com.adobe.granite.crxde-support</artifactId>
-                <version>2.5.2</version>
+                <version>3.0.0</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
@@ -908,22 +907,22 @@
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>com.adobe.granite.crxde-lite</artifactId>
-                <version>1.0.88</version>
+                <version>1.0.88-CQ610-B0001</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>com.adobe.granite.crypto</artifactId>
-                <version>3.0.18</version>
+                <version>3.0.18-CQ610-B0004</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>com.adobe.granite.csrf</artifactId>
-                <version>1.0.8</version>
+                <version>1.0.8-CQ610-B0004</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>com.adobe.granite.distribution.core</artifactId>
-                <version>0.1.2</version>
+                <version>0.1.2-CQ610-B0002</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
@@ -993,7 +992,7 @@
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>com.adobe.granite.queries</artifactId>
-                <version>1.0.10</version>
+                <version>1.0.10-CQ610-B0002</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
@@ -1003,7 +1002,7 @@
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>com.adobe.granite.replication.core</artifactId>
-                <version>5.17.18</version>
+                <version>5.17.18-CQ610-B0004</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
@@ -1048,7 +1047,7 @@
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>com.adobe.granite.security.user</artifactId>
-                <version>0.1.56</version>
+                <version>0.1.56-CQ610-B0002</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
@@ -1088,7 +1087,7 @@
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>com.adobe.granite.ui.clientlibs</artifactId>
-                <version>1.0.14</version>
+                <version>1.0.14-CQ610-B0001</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
@@ -1098,7 +1097,7 @@
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>com.adobe.granite.ui.commons</artifactId>
-                <version>5.5.210</version>
+                <version>5.5.210-CQ610-B0001</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
@@ -1108,12 +1107,12 @@
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>com.adobe.granite.workflow.console</artifactId>
-                <version>1.0.18</version>
+                <version>1.0.18-CQ610-B0002</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>com.adobe.granite.workflow.core</artifactId>
-                <version>1.0.114</version>
+                <version>1.0.114-CQ610-B0008</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
@@ -1168,7 +1167,7 @@
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>crx-auth-token</artifactId>
-                <version>2.5.20</version>
+                <version>2.5.20-CQ610-B0002</version>
             </dependency>
             <dependency>
                 <groupId>com.day.commons</groupId>
@@ -1258,12 +1257,12 @@
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.distribution.core</artifactId>
-                <version>0.1.1</version>
+                <version>0.1.1-r1678168</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.engine</artifactId>
-                <version>2.4.0</version>
+                <version>2.4.2</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.sling</groupId>
@@ -1297,6 +1296,11 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.sling</groupId>
+                <artifactId>org.apache.sling.jcr.davex</artifactId>
+                <version>1.2.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.jcr.resourcesecurity</artifactId>
                 <version>1.0.2</version>
             </dependency>
@@ -1308,7 +1312,7 @@
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.resource.inventory</artifactId>
-                <version>1.0.2</version>
+                <version>1.0.4</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.sling</groupId>
@@ -1316,9 +1320,9 @@
                 <version>1.0.0</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.sling</groupId>
+                <groupId>com.adobe.granite.sling</groupId>
                 <artifactId>org.apache.sling.resourcemerger</artifactId>
-                <version>1.2.8</version>
+                <version>1.2.9-R1675563-B002</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.sling</groupId>
@@ -1338,7 +1342,7 @@
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.scripting.javascript</artifactId>
-                <version>2.0.14</version>
+                <version>2.0.16</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.sling</groupId>
@@ -1349,6 +1353,11 @@
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
                 <version>2.2.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.owasp.esapi</groupId>
+                <artifactId>esapi</artifactId>
+                <version>2.1.0</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.sling</groupId>
@@ -1387,11 +1396,6 @@
             </dependency>
             <dependency>
                 <groupId>com.day.cq</groupId>
-                <artifactId>cq-compat-codeupgrade</artifactId>
-                <version>1.4.36</version>
-            </dependency>
-            <dependency>
-                <groupId>com.day.cq</groupId>
                 <artifactId>cq-upgrades-executor</artifactId>
                 <version>1.2.4</version>
             </dependency>
@@ -1399,16 +1403,6 @@
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.startupfilter.disabler</artifactId>
                 <version>0.0.1-Rev1387008</version>
-            </dependency>
-            <dependency>
-                <groupId>com.adobe.cq.wcm</groupId>
-                <artifactId>cq-geometrixx-commons-core</artifactId>
-                <version>1.3.6</version>
-            </dependency>
-            <dependency>
-                <groupId>com.day.cq.wcm</groupId>
-                <artifactId>cq-wcm-geometrixx</artifactId>
-                <version>5.6.2</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq</groupId>
@@ -1438,7 +1432,7 @@
             <dependency>
                 <groupId>com.adobe.cq.commerce</groupId>
                 <artifactId>cq-commerce-pim</artifactId>
-                <version>5.10.12</version>
+                <version>5.10.14</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq</groupId>
@@ -1461,11 +1455,6 @@
                 <version>1.1.6</version>
             </dependency>
             <dependency>
-                <groupId>com.adobe.cq.betafeedback</groupId>
-                <artifactId>com.adobe.cq.betafeedback.core</artifactId>
-                <version>0.0.10</version>
-            </dependency>
-            <dependency>
                 <groupId>com.day.cq</groupId>
                 <artifactId>cq-chart</artifactId>
                 <version>5.7.2</version>
@@ -1473,7 +1462,7 @@
             <dependency>
                 <groupId>com.day.cq</groupId>
                 <artifactId>cq-analytics</artifactId>
-                <version>5.8.180</version>
+                <version>5.8.186</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq</groupId>
@@ -1488,7 +1477,7 @@
             <dependency>
                 <groupId>com.day.cq</groupId>
                 <artifactId>cq-searchpromote</artifactId>
-                <version>5.8.32</version>
+                <version>5.8.34</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq</groupId>
@@ -1498,7 +1487,7 @@
             <dependency>
                 <groupId>com.adobe.cq</groupId>
                 <artifactId>cq-targetrecommendations</artifactId>
-                <version>1.0.38</version>
+                <version>1.0.40</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.abdera</groupId>
@@ -1618,7 +1607,7 @@
             <dependency>
                 <groupId>com.adobe.cq.aam</groupId>
                 <artifactId>cq-audiencemanager</artifactId>
-                <version>1.2.18</version>
+                <version>1.2.20</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq</groupId>
@@ -1638,7 +1627,7 @@
             <dependency>
                 <groupId>com.adobe.cq</groupId>
                 <artifactId>cq-history</artifactId>
-                <version>5.8.2</version>
+                <version>5.8.4</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq</groupId>
@@ -1648,7 +1637,7 @@
             <dependency>
                 <groupId>com.day.cq</groupId>
                 <artifactId>cq-mailer</artifactId>
-                <version>5.9.8</version>
+                <version>5.9.12</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq</groupId>
@@ -1663,7 +1652,7 @@
             <dependency>
                 <groupId>com.day.cq</groupId>
                 <artifactId>cq-personalization</artifactId>
-                <version>5.8.66</version>
+                <version>5.8.68</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq</groupId>
@@ -1713,7 +1702,7 @@
             <dependency>
                 <groupId>com.day.cq</groupId>
                 <artifactId>cq-security</artifactId>
-                <version>5.8.16</version>
+                <version>5.8.18</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq</groupId>
@@ -1768,7 +1757,7 @@
             <dependency>
                 <groupId>com.adobe.cq</groupId>
                 <artifactId>com.adobe.cq.projects.core</artifactId>
-                <version>0.1.58</version>
+                <version>0.1.60</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq</groupId>
@@ -1803,7 +1792,7 @@
             <dependency>
                 <groupId>com.day.cq.dam</groupId>
                 <artifactId>adobe-dam-idsprint</artifactId>
-                <version>0.0.34</version>
+                <version>0.0.36</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq.dam</groupId>
@@ -1828,17 +1817,17 @@
             <dependency>
                 <groupId>com.day.cq.dam</groupId>
                 <artifactId>cq-dam-api</artifactId>
-                <version>5.8.26</version>
+                <version>5.8.28</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq.dam</groupId>
                 <artifactId>cq-dam-commons</artifactId>
-                <version>5.8.84</version>
+                <version>5.8.88</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq.dam</groupId>
                 <artifactId>cq-dam-core</artifactId>
-                <version>5.8.164</version>
+                <version>5.8.172</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq.dam</groupId>
@@ -1848,7 +1837,7 @@
             <dependency>
                 <groupId>com.day.cq.dam</groupId>
                 <artifactId>cq-dam-handler</artifactId>
-                <version>5.8.20</version>
+                <version>5.8.24</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq.dam</groupId>
@@ -1858,7 +1847,7 @@
             <dependency>
                 <groupId>com.adobe.cq</groupId>
                 <artifactId>cq-dam-index-builder</artifactId>
-                <version>1.0.12</version>
+                <version>1.0.14</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq</groupId>
@@ -1916,6 +1905,11 @@
                 <version>1.0.4</version>
             </dependency>
             <dependency>
+                <groupId>com.adobe.xmp.worker</groupId>
+                <artifactId>files.native.fragment</artifactId>
+                <version>1.0.4</version>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.sanselan</groupId>
                 <artifactId>sanselan</artifactId>
                 <version>0.97-incubator</version>
@@ -1923,17 +1917,17 @@
             <dependency>
                 <groupId>com.adobe.aemds.guide</groupId>
                 <artifactId>aemds-guide-core</artifactId>
-                <version>2.1.16</version>
+                <version>2.1.28</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.aemds.formsmanager</groupId>
                 <artifactId>adobe-aemds-formsanddocuments-core</artifactId>
-                <version>4.1.18</version>
+                <version>4.1.28</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.livecycle.formsportal</groupId>
                 <artifactId>adobe-formsportal-services</artifactId>
-                <version>4.1.16</version>
+                <version>4.1.26</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
@@ -1943,7 +1937,7 @@
             <dependency>
                 <groupId>com.day.cq.wcm</groupId>
                 <artifactId>cq-wcm-foundation</artifactId>
-                <version>5.8.48</version>
+                <version>5.8.52</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
@@ -1958,7 +1952,7 @@
             <dependency>
                 <groupId>com.adobe.granite</groupId>
                 <artifactId>com.adobe.granite.translation.connector.msft.core</artifactId>
-                <version>1.1.38</version>
+                <version>1.1.40</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.granite</groupId>
@@ -1973,22 +1967,22 @@
             <dependency>
                 <groupId>com.day.cq.mcm</groupId>
                 <artifactId>cq-mcm-campaign</artifactId>
-                <version>1.0.16</version>
+                <version>1.0.18</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq.mcm</groupId>
                 <artifactId>cq-mcm-exacttarget-integration</artifactId>
-                <version>1.2.6</version>
+                <version>1.2.8</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq.mcm</groupId>
                 <artifactId>cq-mcm-core</artifactId>
-                <version>5.9.6</version>
+                <version>5.9.10</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq.mcm</groupId>
                 <artifactId>cq-mcm-emailprovider</artifactId>
-                <version>1.2.4</version>
+                <version>1.2.6</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq.mcm</groupId>
@@ -2028,12 +2022,12 @@
             <dependency>
                 <groupId>com.adobe.cq.mobile</groupId>
                 <artifactId>cq-mobile-core</artifactId>
-                <version>6.1.36</version>
+                <version>6.1.38</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq.mobile</groupId>
                 <artifactId>cq-mobile-phonegap-build</artifactId>
-                <version>5.8.20</version>
+                <version>5.8.22</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq.mobile</groupId>
@@ -2068,7 +2062,7 @@
             <dependency>
                 <groupId>com.adobe.cq.social</groupId>
                 <artifactId>cq-social-activitystreams</artifactId>
-                <version>1.2.65</version>
+                <version>1.2.68</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq.social</groupId>
@@ -2078,7 +2072,7 @@
             <dependency>
                 <groupId>com.adobe.cq.social</groupId>
                 <artifactId>cq-social-calendar</artifactId>
-                <version>1.2.18</version>
+                <version>1.2.19</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq.social</groupId>
@@ -2088,7 +2082,7 @@
             <dependency>
                 <groupId>com.adobe.cq.social</groupId>
                 <artifactId>cq-social-commons</artifactId>
-                <version>1.5.102</version>
+                <version>1.5.103</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq.social</groupId>
@@ -2103,7 +2097,7 @@
             <dependency>
                 <groupId>com.adobe.cq.social</groupId>
                 <artifactId>cq-social-console</artifactId>
-                <version>1.0.140</version>
+                <version>1.0.144</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq.social</groupId>
@@ -2123,12 +2117,12 @@
             <dependency>
                 <groupId>com.adobe.cq.social</groupId>
                 <artifactId>cq-social-forum</artifactId>
-                <version>1.4.50</version>
+                <version>1.4.52</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq.social</groupId>
                 <artifactId>cq-social-group</artifactId>
-                <version>1.2.42</version>
+                <version>1.2.43</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq.social</groupId>
@@ -2193,7 +2187,7 @@
             <dependency>
                 <groupId>com.adobe.cq.social</groupId>
                 <artifactId>cq-social-scoring</artifactId>
-                <version>1.1.8</version>
+                <version>1.1.9</version>
             </dependency>
             <dependency>
                 <groupId>com.adobe.cq.social</groupId>
@@ -2268,7 +2262,7 @@
             <dependency>
                 <groupId>com.day.cq.wcm</groupId>
                 <artifactId>cq-wcm-core</artifactId>
-                <version>5.8.194</version>
+                <version>5.8.200</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq.wcm</groupId>
@@ -2328,7 +2322,7 @@
             <dependency>
                 <groupId>com.day.cq.wcm</groupId>
                 <artifactId>cq-wcm-resource-details</artifactId>
-                <version>0.0.2</version>
+                <version>0.1.2</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq.wcm</groupId>
@@ -2353,7 +2347,7 @@
             <dependency>
                 <groupId>com.day.cq.wcm</groupId>
                 <artifactId>cq-wcm-translation</artifactId>
-                <version>1.1.68</version>
+                <version>1.1.78</version>
             </dependency>
             <dependency>
                 <groupId>com.day.cq.wcm</groupId>
@@ -2378,7 +2372,7 @@
             <dependency>
                 <groupId>com.adobe.livecycle</groupId>
                 <artifactId>adobe-xfaforms-common</artifactId>
-                <version>4.1.16</version>
+                <version>4.1.20</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
