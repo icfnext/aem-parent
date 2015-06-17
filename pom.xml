@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.citytechinc.aem</groupId>
     <artifactId>parent</artifactId>
-    <version>6.1.1</version>
+    <version>6.1.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>AEM Parent POM</name>
     <description>
