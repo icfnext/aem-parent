@@ -44,15 +44,14 @@
     </repositories>
 
     <distributionManagement>
-        <repository>
-            <id>citytech-public-releases</id>
-            <url>http://nexus.citytech.ctmsp.com/content/repositories/public-releases</url>
-        </repository>
         <snapshotRepository>
-            <id>citytech-public-snapshots</id>
-            <url>http://nexus.citytech.ctmsp.com/content/repositories/public-snapshots</url>
-            <uniqueVersion>false</uniqueVersion>
+            <id>sonatype-nexus-staging</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
     </distributionManagement>
 
     <dependencyManagement>
