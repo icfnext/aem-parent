@@ -641,34 +641,12 @@
                 <version>1.2</version>
                 <scope>provided</scope>
             </dependency>
-            <!-- TODO: Determine what version of commons-lang should be being used
-            <dependency>
-                <groupId>commons-lang</groupId>
-                <artifactId>commons-lang</artifactId>
-                <version>2.6</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpclient</artifactId>
-                <version>4.3.3</version>
-                <scope>provided</scope>
-            </dependency>
-            -->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpcore</artifactId>
                 <version>4.3.2</version>
                 <scope>provided</scope>
             </dependency>
-            <!-- TODO: Determine what version should be used
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpmime</artifactId>
-                <version>4.3.3</version>
-                <scope>provided</scope>
-            </dependency>
-            -->
             <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>oak-solr-core</artifactId>
@@ -861,14 +839,6 @@
                 <version>3.1.0.018</version>
                 <scope>provided</scope>
             </dependency>
-            <!-- TODO: Determine which version to use
-            <dependency>
-                <groupId>commons-codec</groupId>
-                <artifactId>commons-codec</artifactId>
-                <version>1.6</version>
-                <scope>provided</scope>
-            </dependency>
-            -->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>fluent-hc</artifactId>
@@ -2633,14 +2603,6 @@
                 <version>1.0.4</version>
                 <scope>provided</scope>
             </dependency>
-            <!-- TODO: Determine which version should be used
-            <dependency>
-                <groupId>com.adobe.xmp.worker</groupId>
-                <artifactId>files.native.fragment</artifactId>
-                <version>1.0.2</version>
-                <scope>provided</scope>
-            </dependency>
-            -->
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.commons.contentdetection</artifactId>
