@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.citytechinc.aem</groupId>
+    <groupId>com.icfolson.aem</groupId>
     <artifactId>parent</artifactId>
     <version>6.2.0</version>
     <packaging>pom</packaging>
@@ -16,8 +16,8 @@
     <url>https://github.com/Citytechinc/aem-parent</url>
 
     <organization>
-        <name>CITYTECH, Inc.</name>
-        <url>http://www.citytechinc.com</url>
+        <name>ICF Olson</name>
+        <url>http://www.icfolson.com</url>
     </organization>
 
     <developers>
